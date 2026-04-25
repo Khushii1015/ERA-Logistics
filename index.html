@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ERA Logistic Inc — Port Drayage & Nationwide Distribution</title>
+<meta name="description" content="ERA Logistic Inc. Oakland-based port drayage, FTL/LTL/intermodal trucking, reefers, transloading, and nationwide distribution." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Subtle grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Page transition curtain -->
+<div class="curtain" aria-hidden="true"></div>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav">
+  <a href="#/" class="logo" data-link aria-label="ERA Logistic — Home">
+    <span class="logo-mark">
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="2" width="56" height="56" rx="3" fill="#FFD400" stroke="#0a0a0a" stroke-width="2.5"/>
+        <text x="30" y="40" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="600" font-size="26" fill="#0a0a0a" letter-spacing="-1">ERA</text>
+      </svg>
+    </span>
+    <span class="logo-text">
+      <span class="logo-name">ERA</span>
+      <span class="logo-sub">LOGISTIC INC.</span>
+    </span>
+  </a>
+
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#/" data-link>Home</a>
+    <a href="#/services" data-link>Services</a>
+    <a href="#/fleet" data-link>Fleet</a>
+    <a href="#/contact" data-link>Contact</a>
+  </nav>
+
+  <a href="#/contact" data-link class="nav-cta">
+    <span>Get a Quote</span>
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+
+  <button class="nav-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ======================= MAIN ROUTER ======================= -->
+<main id="app"></main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">ERA</div>
+      <p>Oakland-based logistics, moving freight from port to door across the nation.</p>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <a href="#/" data-link>Home</a>
+      <a href="#/services" data-link>Services</a>
+      <a href="#/fleet" data-link>Fleet</a>
+      <a href="#/contact" data-link>Contact</a>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <p>70 Hegenberger Loop<br/>Oakland, CA 94621</p>
+      <p>Dispatch: <a href="tel:5102009512">510-200-9512</a></p>
+      <p><a href="mailto:Dispatch@eralogistic.net">Dispatch@eralogistic.net</a></p>
+    </div>
+    <div class="footer-marquee-wrap">
+      <h4>On the road</h4>
+      <div class="footer-ticker">
+        <div class="footer-ticker-track">
+          <span>● OAKLAND</span><span>● LONG BEACH</span><span>● LOS ANGELES</span><span>● STOCKTON</span><span>● RENO</span><span>● PHOENIX</span><span>● SALT LAKE CITY</span><span>● DENVER</span><span>● DALLAS</span><span>● CHICAGO</span><span>● ATLANTA</span><span>● OAKLAND</span><span>● LONG BEACH</span><span>● LOS ANGELES</span><span>● STOCKTON</span><span>● RENO</span><span>● PHOENIX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> ERA Logistic Inc. All rights reserved.</span>
+    <span class="footer-meta">DOT registered · CA-based · Nationwide service</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
