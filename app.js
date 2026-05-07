@@ -214,7 +214,7 @@ tpl.services = () => `
 </section>
 
 <div class="hero-image-block reveal">
-  <img src="images/6.jpg" alt="ERA Logistic service operations" />
+  <img src="images/9.jpg" alt="ERA Logistic service operations" />
   <div class="hero-image-overlay"></div>
   <div class="hero-image-caption">
     <h3>Comprehensive logistics solutions</h3>
@@ -326,7 +326,7 @@ tpl.contact = () => `
 </section>
 
 <div class="hero-image-block reveal">
-  <img src="images/9.jpg" alt="ERA Logistic Oakland headquarters" />
+  <img src="images/6.jpg" alt="ERA Logistic Oakland headquarters" />
   <div class="hero-image-overlay"></div>
   <div class="hero-image-caption">
     <h3>Oakland headquarters</h3>
