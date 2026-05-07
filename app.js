@@ -72,6 +72,15 @@ tpl.home = () => `
   </div>
 </section>
 
+<div class="hero-image-block reveal">
+  <img src="home-hero.jpg" alt="ERA Logistic Oakland port operations" />
+  <div class="hero-image-overlay"></div>
+  <div class="hero-image-caption">
+    <h3>Oakland port to nationwide delivery</h3>
+    <p>From marine terminals to your receiving dock, every mile is managed in-house with our own equipment and dedicated operator network.</p>
+  </div>
+</div>
+
 <section class="stats-strip reveal-stagger">
   <div class="stat"><div class="stat-num">70+</div><div class="stat-label">Trucks & Operators</div></div>
   <div class="stat"><div class="stat-num">100+</div><div class="stat-label">Chassis On Hand</div></div>
@@ -185,6 +194,15 @@ tpl.services = () => `
   <p>Every service runs through one dispatch desk and one accountability chain. No handoffs to vendors you've never met, no "let me check with the broker." Just answers, equipment, and movement.</p>
 </section>
 
+<div class="hero-image-block reveal">
+  <img src="services-hero.jpg" alt="ERA Logistic service operations" />
+  <div class="hero-image-overlay"></div>
+  <div class="hero-image-caption">
+    <h3>Comprehensive logistics solutions</h3>
+    <p>From port drayage to nationwide distribution, every service designed to keep freight moving without delays or handoffs.</p>
+  </div>
+</div>
+
 <div class="services-list reveal-stagger">
   ${SERVICES.map(s => `
     <a href="#/contact" data-link class="svc">
@@ -215,6 +233,15 @@ tpl.fleet = () => `
   <h1>The <em>iron</em><br/>behind the moves.</h1>
   <p>We don't lease our promises. ERA owns and operates a working fleet of trucks, chassis, ISO tankers, and gensets — backed by 60+ owner-operators who run dedicated for us.</p>
 </section>
+
+<div class="hero-image-block reveal">
+  <img src="fleet-hero.jpg" alt="ERA Logistic fleet and equipment" />
+  <div class="hero-image-overlay"></div>
+  <div class="hero-image-caption">
+    <h3>Owned and operated equipment</h3>
+    <p>Company trucks, dedicated operators, and specialized chassis all maintained in-house for reliable capacity year-round.</p>
+  </div>
+</div>
 
 <div class="fleet-grid reveal-stagger">
   ${FLEET.map(f => `
@@ -276,6 +303,15 @@ tpl.contact = () => `
   <h1>Dispatch<br/>is <em>open.</em></h1>
   <p>Need a rate, a pickup, or a status update? Reach out by phone or email — we answer fast, in plain English, and we don't put you through a phone tree.</p>
 </section>
+
+<div class="hero-image-block reveal">
+  <img src="contact-hero.jpg" alt="ERA Logistic Oakland headquarters" />
+  <div class="hero-image-overlay"></div>
+  <div class="hero-image-caption">
+    <h3>Oakland headquarters</h3>
+    <p>Minutes from Port of Oakland marine terminals. Drop a trailer, meet the team, or just say hi.</p>
+  </div>
+</div>
 
 <div class="contact-wrap">
   <div class="contact-info">
@@ -374,11 +410,8 @@ function mapSVG(){
         <stop offset="100%" stop-color="#FFD400" stop-opacity="0"/>
       </radialGradient>
     </defs>
-    <!-- Stylized US outline -->
     <path d="M30 140 L80 100 L130 90 L180 80 L240 75 L310 80 L370 90 L420 100 L460 130 L470 180 L460 230 L430 270 L400 290 L350 295 L300 290 L250 295 L200 290 L150 280 L100 260 L60 220 L30 180 Z"
       fill="none" stroke="#bcbab0" stroke-width="1.5" stroke-dasharray="4 4"/>
-
-    <!-- Hub: Oakland -->
     <circle cx="70" cy="200" r="44" fill="url(#glow)"/>
     <circle cx="70" cy="200" r="9" fill="#FFD400" stroke="#0a0a0a" stroke-width="2">
       <animate attributeName="r" values="7;11;7" dur="2s" repeatCount="indefinite"/>
@@ -387,41 +420,18 @@ function mapSVG(){
       <animate attributeName="r" values="10;30;10" dur="2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values=".9;0;.9" dur="2s" repeatCount="indefinite"/>
     </circle>
-
-    <!-- Destination dots -->
     <g fill="#0a0a0a">
-      <circle cx="180" cy="180" r="3.5"/>
-      <circle cx="240" cy="220" r="3.5"/>
-      <circle cx="290" cy="170" r="3.5"/>
-      <circle cx="350" cy="200" r="3.5"/>
-      <circle cx="400" cy="240" r="3.5"/>
-      <circle cx="430" cy="170" r="3.5"/>
-      <circle cx="200" cy="120" r="3.5"/>
+      <circle cx="180" cy="180" r="3.5"/><circle cx="240" cy="220" r="3.5"/><circle cx="290" cy="170" r="3.5"/>
+      <circle cx="350" cy="200" r="3.5"/><circle cx="400" cy="240" r="3.5"/><circle cx="430" cy="170" r="3.5"/><circle cx="200" cy="120" r="3.5"/>
     </g>
-
-    <!-- Connection lines, animated -->
     <g stroke="#0a0a0a" stroke-width="1" fill="none" opacity=".35">
-      <path d="M70 200 Q 130 150 180 180" stroke-dasharray="200" stroke-dashoffset="200">
-        <animate attributeName="stroke-dashoffset" from="200" to="0" dur="3s" repeatCount="indefinite"/>
-      </path>
-      <path d="M70 200 Q 160 250 240 220" stroke-dasharray="200" stroke-dashoffset="200">
-        <animate attributeName="stroke-dashoffset" from="200" to="0" dur="3.5s" repeatCount="indefinite"/>
-      </path>
-      <path d="M70 200 Q 180 130 290 170" stroke-dasharray="280" stroke-dashoffset="280">
-        <animate attributeName="stroke-dashoffset" from="280" to="0" dur="4s" repeatCount="indefinite"/>
-      </path>
-      <path d="M70 200 Q 220 220 350 200" stroke-dasharray="320" stroke-dashoffset="320">
-        <animate attributeName="stroke-dashoffset" from="320" to="0" dur="4.5s" repeatCount="indefinite"/>
-      </path>
-      <path d="M70 200 Q 250 270 400 240" stroke-dasharray="380" stroke-dashoffset="380">
-        <animate attributeName="stroke-dashoffset" from="380" to="0" dur="5s" repeatCount="indefinite"/>
-      </path>
-      <path d="M70 200 Q 280 150 430 170" stroke-dasharray="400" stroke-dashoffset="400">
-        <animate attributeName="stroke-dashoffset" from="400" to="0" dur="5.5s" repeatCount="indefinite"/>
-      </path>
+      <path d="M70 200 Q 130 150 180 180" stroke-dasharray="200" stroke-dashoffset="200"><animate attributeName="stroke-dashoffset" from="200" to="0" dur="3s" repeatCount="indefinite"/></path>
+      <path d="M70 200 Q 160 250 240 220" stroke-dasharray="200" stroke-dashoffset="200"><animate attributeName="stroke-dashoffset" from="200" to="0" dur="3.5s" repeatCount="indefinite"/></path>
+      <path d="M70 200 Q 180 130 290 170" stroke-dasharray="280" stroke-dashoffset="280"><animate attributeName="stroke-dashoffset" from="280" to="0" dur="4s" repeatCount="indefinite"/></path>
+      <path d="M70 200 Q 220 220 350 200" stroke-dasharray="320" stroke-dashoffset="320"><animate attributeName="stroke-dashoffset" from="320" to="0" dur="4.5s" repeatCount="indefinite"/></path>
+      <path d="M70 200 Q 250 270 400 240" stroke-dasharray="380" stroke-dashoffset="380"><animate attributeName="stroke-dashoffset" from="380" to="0" dur="5s" repeatCount="indefinite"/></path>
+      <path d="M70 200 Q 280 150 430 170" stroke-dasharray="400" stroke-dashoffset="400"><animate attributeName="stroke-dashoffset" from="400" to="0" dur="5.5s" repeatCount="indefinite"/></path>
     </g>
-
-    <!-- Label -->
     <text x="70" y="252" fill="#0a0a0a" font-family="JetBrains Mono, monospace" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="2">OAKLAND HQ</text>
     <text x="450" y="320" fill="#9a9a94" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="end" letter-spacing="1.5">// LOWER 48</text>
   </svg>`;
@@ -430,16 +440,11 @@ function mapSVG(){
 function yardSVG(){
   return `
   <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
-    <!-- Roads -->
     <path d="M0 130 H400" stroke="#0a0a0a" stroke-width="22" opacity=".85"/>
     <path d="M0 130 H400" stroke="#FFD400" stroke-width="1.5" stroke-dasharray="10 10"/>
     <path d="M260 0 V240" stroke="#0a0a0a" stroke-width="18" opacity=".85"/>
-
-    <!-- Yard area -->
     <rect x="40" y="50" width="180" height="60" fill="none" stroke="#bcbab0" stroke-width="1.2"/>
     <text x="50" y="44" fill="#5a5a5a" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" letter-spacing="1.5">// YARD</text>
-
-    <!-- Containers -->
     <g>
       <rect x="50" y="58" width="36" height="14" fill="#FFD400" stroke="#0a0a0a" stroke-width=".5"/>
       <rect x="50" y="76" width="36" height="14" fill="#0a0a0a"/>
@@ -449,18 +454,10 @@ function yardSVG(){
       <rect x="134" y="76" width="36" height="14" fill="#FFD400" stroke="#0a0a0a" stroke-width=".5"/>
       <rect x="176" y="58" width="36" height="14" fill="#0a0a0a"/>
     </g>
-
-    <!-- Truck moving -->
     <g>
-      <rect x="0" y="120" width="50" height="20" fill="#FFD400" stroke="#0a0a0a" stroke-width="1">
-        <animate attributeName="x" from="-60" to="420" dur="6s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="50" y="124" width="14" height="16" fill="#0a0a0a">
-        <animate attributeName="x" from="-10" to="430" dur="6s" repeatCount="indefinite"/>
-      </rect>
+      <rect x="0" y="120" width="50" height="20" fill="#FFD400" stroke="#0a0a0a" stroke-width="1"><animate attributeName="x" from="-60" to="420" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="50" y="124" width="14" height="16" fill="#0a0a0a"><animate attributeName="x" from="-10" to="430" dur="6s" repeatCount="indefinite"/></rect>
     </g>
-
-    <!-- Building -->
     <g>
       <rect x="290" y="160" width="80" height="60" fill="#fafaf7" stroke="#0a0a0a" stroke-width="1.5"/>
       <rect x="290" y="160" width="80" height="14" fill="#0a0a0a"/>
@@ -469,13 +466,10 @@ function yardSVG(){
       <rect x="350" y="186" width="14" height="14" fill="#FFD400" opacity=".7"/>
       <text x="296" y="171" fill="#FFD400" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="600" font-size="11" letter-spacing="0">ERA HQ</text>
     </g>
-
-    <!-- Pin -->
     <circle cx="60" cy="65" r="10" fill="none" stroke="#E8B800" stroke-width="1.5" opacity=".6">
       <animate attributeName="r" values="8;18;8" dur="2.5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values=".8;0;.8" dur="2.5s" repeatCount="indefinite"/>
     </circle>
-
     <text x="395" y="232" text-anchor="end" fill="#9a9a94" font-family="JetBrains Mono, monospace" font-size="9" font-weight="500" letter-spacing="1.5">37.7°N · 122.2°W</text>
   </svg>`;
 }
@@ -527,7 +521,6 @@ function setActiveNav(path){
 
 window.addEventListener('hashchange', render);
 
-/* SPA link behavior + close mobile menu */
 document.addEventListener('click', e => {
   const link = e.target.closest('[data-link]');
   if(link){
@@ -535,18 +528,15 @@ document.addEventListener('click', e => {
   }
 });
 
-/* Mobile toggle */
 document.querySelector('.nav-toggle').addEventListener('click', () => {
   document.querySelector('.nav').classList.toggle('open');
 });
 
-/* Scrolled nav state */
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('.nav');
   nav.classList.toggle('scrolled', window.scrollY > 24);
 }, {passive:true});
 
-/* ====================== REVEAL ON SCROLL ====================== */
 let observer;
 function initRevealObserver(){
   if(observer) observer.disconnect();
@@ -562,7 +552,6 @@ function initRevealObserver(){
   document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
 }
 
-/* ====================== FORM ====================== */
 function initFormHandler(){
   const form = document.getElementById('quoteForm');
   if(!form) return;
@@ -580,6 +569,5 @@ function initFormHandler(){
   });
 }
 
-/* ====================== INIT ====================== */
 document.getElementById('year').textContent = new Date().getFullYear();
 render();
