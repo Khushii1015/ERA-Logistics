@@ -1,4 +1,13 @@
-/* ====================== ICONS ====================== */
+/* ============================================================================
+   ERA LOGISTIC INC. - MAIN JAVASCRIPT
+   Single-page application with hash-based routing
+   ============================================================================ */
+
+/* ============================================================================
+   SECTION 1: ICON LIBRARY
+   SVG icons used throughout the site
+   ============================================================================ */
+
 const ICONS = {
   port: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M2 21h20"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-6h6v6"/><path d="M5 8l7 4 7-4"/></svg>`,
   truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M1 17h13V5H1v12z"/><path d="M14 8h4l3 3v6h-7"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>`,
@@ -18,7 +27,11 @@ const ICONS = {
   handshake: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M11 17l2 2a1 1 0 003-3"/><path d="M14 16l2.5 2.5a1 1 0 003-3l-3.88-3.88a3 3 0 00-4.24 0L9 14a3 3 0 01-4.24 0L3 12.25"/><path d="M21 4l-3 3-7-7-3 3 7 7"/><path d="M3 4l3 3 7-7"/></svg>`,
 };
 
-/* ====================== DATA ====================== */
+/* ============================================================================
+   SECTION 2: CONTENT DATA
+   Services and fleet information
+   ============================================================================ */
+
 const SERVICES = [
   {n:"01", t:"Port Drayage — Oakland", icon:"port", tag:"PORT OPS",
    d:"Specialized drayage out of the Port of Oakland. Same-day pulls, pre-pulls, and live unloads handled by a dedicated team."},
@@ -49,9 +62,14 @@ const FLEET = [
    desc:"Genset units to keep reefer containers powered during over-the-road moves. Cold chain stays unbroken."},
 ];
 
-/* ====================== TEMPLATES ====================== */
+/* ============================================================================
+   SECTION 3: PAGE TEMPLATES
+   HTML templates for each page (home, services, fleet, contact)
+   ============================================================================ */
+
 const tpl = {};
 
+/* ---------- HOME PAGE ---------- */
 tpl.home = () => `
 <section class="hero">
   <div class="hero-grid-bg"></div>
@@ -73,7 +91,7 @@ tpl.home = () => `
 </section>
 
 <div class="hero-image-block reveal">
-  <img src="home-hero.jpg" alt="ERA Logistic Oakland port operations" />
+  <img src="images/1.jpg" alt="ERA Logistic Oakland port operations" />
   <div class="hero-image-overlay"></div>
   <div class="hero-image-caption">
     <h3>Oakland port to nationwide delivery</h3>
@@ -116,10 +134,10 @@ tpl.home = () => `
 </section>
 
 <section class="values">
-  <div class="section-head reveal" style="margin-bottom:48px">
+  <div class="section-head section-head--compact reveal">
     <div>
       <div class="section-eyebrow"><span class="num">02</span> · Why ERA</div>
-      <h2 style="font-size:clamp(36px,5vw,64px)">Built on <em>accountability.</em></h2>
+      <h2 class="h2--compact">Built on <em>accountability.</em></h2>
     </div>
   </div>
   <div class="values-grid reveal-stagger">
@@ -186,6 +204,7 @@ tpl.home = () => `
 </section>
 `;
 
+/* ---------- SERVICES PAGE ---------- */
 tpl.services = () => `
 <section class="page-header">
   <div class="hero-grid-bg"></div>
@@ -195,7 +214,7 @@ tpl.services = () => `
 </section>
 
 <div class="hero-image-block reveal">
-  <img src="services-hero.jpg" alt="ERA Logistic service operations" />
+  <img src="images/6.jpg" alt="ERA Logistic service operations" />
   <div class="hero-image-overlay"></div>
   <div class="hero-image-caption">
     <h3>Comprehensive logistics solutions</h3>
@@ -226,6 +245,7 @@ tpl.services = () => `
 </section>
 `;
 
+/* ---------- FLEET PAGE ---------- */
 tpl.fleet = () => `
 <section class="page-header">
   <div class="hero-grid-bg"></div>
@@ -235,7 +255,7 @@ tpl.fleet = () => `
 </section>
 
 <div class="hero-image-block reveal">
-  <img src="fleet-hero.jpg" alt="ERA Logistic fleet and equipment" />
+  <img src="images/7.jpg" alt="ERA Logistic fleet and equipment" />
   <div class="hero-image-overlay"></div>
   <div class="hero-image-caption">
     <h3>Owned and operated equipment</h3>
@@ -287,7 +307,7 @@ tpl.fleet = () => `
     </div>
     <p class="section-side">When peak season hits and brokers are scrambling for trucks, our dedicated network is already moving your load.</p>
   </div>
-  <div class="stats-strip reveal-stagger" style="border-top:none">
+  <div class="stats-strip stats-strip--no-top reveal-stagger">
     <div class="stat"><div class="stat-num">10</div><div class="stat-label">Company Trucks</div></div>
     <div class="stat"><div class="stat-num">60+</div><div class="stat-label">Owner Operators</div></div>
     <div class="stat"><div class="stat-num">160+</div><div class="stat-label">Chassis Total</div></div>
@@ -296,6 +316,7 @@ tpl.fleet = () => `
 </section>
 `;
 
+/* ---------- CONTACT PAGE ---------- */
 tpl.contact = () => `
 <section class="page-header">
   <div class="hero-grid-bg"></div>
@@ -305,7 +326,7 @@ tpl.contact = () => `
 </section>
 
 <div class="hero-image-block reveal">
-  <img src="contact-hero.jpg" alt="ERA Logistic Oakland headquarters" />
+  <img src="images/9.jpg" alt="ERA Logistic Oakland headquarters" />
   <div class="hero-image-overlay"></div>
   <div class="hero-image-caption">
     <h3>Oakland headquarters</h3>
@@ -400,7 +421,12 @@ tpl.contact = () => `
 </section>
 `;
 
-/* ====================== SVG ART ====================== */
+/* ============================================================================
+   SECTION 4: SVG GRAPHICS
+   Animated SVG graphics for coverage map and yard visualization
+   ============================================================================ */
+
+/* Coverage map with animated route lines */
 function mapSVG(){
   return `
   <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg">
@@ -437,6 +463,7 @@ function mapSVG(){
   </svg>`;
 }
 
+/* Yard visualization with animated truck */
 function yardSVG(){
   return `
   <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
@@ -474,7 +501,12 @@ function yardSVG(){
   </svg>`;
 }
 
-/* ====================== ROUTER ====================== */
+/* ============================================================================
+   SECTION 5: ROUTER & PAGE MANAGEMENT
+   Hash-based single-page application router
+   ============================================================================ */
+
+/* Route configuration */
 const routes = {
   '/': tpl.home,
   '/services': tpl.services,
@@ -519,8 +551,14 @@ function setActiveNav(path){
   });
 }
 
+/* ============================================================================
+   SECTION 6: EVENT HANDLERS & INTERACTIONS
+   ============================================================================ */
+
+/* Handle hash changes (navigation) */
 window.addEventListener('hashchange', render);
 
+/* Intercept link clicks for SPA behavior + close mobile menu */
 document.addEventListener('click', e => {
   const link = e.target.closest('[data-link]');
   if(link){
