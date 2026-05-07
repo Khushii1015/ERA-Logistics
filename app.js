@@ -92,11 +92,6 @@ tpl.home = () => `
 
 <div class="hero-image-block reveal">
   <img src="images/1.jpg" alt="ERA Logistic Oakland port operations" />
-  <div class="hero-image-overlay"></div>
-  <div class="hero-image-caption">
-    <h3>Oakland port to nationwide delivery</h3>
-    <p>From marine terminals to your receiving dock, every mile is managed in-house with our own equipment and dedicated operator network.</p>
-  </div>
 </div>
 
 <section class="stats-strip reveal-stagger">
@@ -215,11 +210,6 @@ tpl.services = () => `
 
 <div class="hero-image-block reveal">
   <img src="images/9.jpg" alt="ERA Logistic service operations" />
-  <div class="hero-image-overlay"></div>
-  <div class="hero-image-caption">
-    <h3>Comprehensive logistics solutions</h3>
-    <p>From port drayage to nationwide distribution, every service designed to keep freight moving without delays or handoffs.</p>
-  </div>
 </div>
 
 <div class="services-list reveal-stagger">
@@ -256,11 +246,6 @@ tpl.fleet = () => `
 
 <div class="hero-image-block reveal">
   <img src="images/7.jpg" alt="ERA Logistic fleet and equipment" />
-  <div class="hero-image-overlay"></div>
-  <div class="hero-image-caption">
-    <h3>Owned and operated equipment</h3>
-    <p>Company trucks, dedicated operators, and specialized chassis all maintained in-house for reliable capacity year-round.</p>
-  </div>
 </div>
 
 <div class="fleet-grid reveal-stagger">
@@ -327,11 +312,6 @@ tpl.contact = () => `
 
 <div class="hero-image-block reveal">
   <img src="images/6.jpg" alt="ERA Logistic Oakland headquarters" />
-  <div class="hero-image-overlay"></div>
-  <div class="hero-image-caption">
-    <h3>Oakland headquarters</h3>
-    <p>Minutes from Port of Oakland marine terminals. Drop a trailer, meet the team, or just say hi.</p>
-  </div>
 </div>
 
 <div class="contact-wrap">
