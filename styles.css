@@ -109,7 +109,7 @@ img,svg{display:block;max-width:100%}
 
 .logo{display:block;transition:opacity .25s ease}
 .logo:hover{opacity:.75}
-.logo-img{height:100px;width:auto;display:block}
+.logo-img{height:200px;width:auto;display:block}
 
 .nav-links{display:flex;gap:4px}
 .nav-links a{
