@@ -105,11 +105,11 @@ img,svg{display:block;max-width:100%}
   border-bottom:1px solid var(--line);
   transition:padding .3s ease;
 }
-.nav.scrolled{padding:6px var(--pad-x)}
+.nav.scrolled{padding:4px var(--pad-x)}
 
 .logo{display:block;transition:opacity .25s ease}
 .logo:hover{opacity:.75}
-.logo-img{height:200px;width:auto;display:block}
+.logo-img{height:100px;width:auto;display:block}
 
 .nav-links{display:flex;gap:4px}
 .nav-links a{
